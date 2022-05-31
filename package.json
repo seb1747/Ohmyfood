@@ -1,0 +1,15 @@
+{
+  "name": "projet_ohmyfood",
+  "version": "1.0.0",
+  "description": "projet_3",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/seb1747/sebastienbinet1.git"
+  },
+  "author": "binet sebastien",
+  "license": "ISC"
+}
