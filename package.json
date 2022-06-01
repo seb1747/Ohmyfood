@@ -4,7 +4,7 @@
   "description": "projet_3",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "sass": "sass --watch ./sass/main.scss:./css/style.css"
   },
   "author": "binet sebastien",
   "license": "ISC"
