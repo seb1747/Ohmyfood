@@ -1,3 +1,28 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap");
+/*variables background*/
+.logo {
+  display: flex;
+  justify-content: center;
+}
 
+.location {
+  display: flex;
+  justify-content: center;
+  background-color: #ded9d9;
+}
+.location__dot {
+  display: flex;
+  justify-content: center;
+  color: black;
+  width: 50px;
+  padding-top: 13px;
+  font-size: 14px;
+  font-weight: bold;
+}
+.location__text {
+  font-size: 14px;
+  font-weight: bold;
+}
 
 /*# sourceMappingURL=style.css.map */
