@@ -37,24 +37,25 @@
 
 .reserver {
   display: flex;
+  justify-content: space-around;
   flex-direction: column;
-  justify-content: center;
-  height: 350px;
+  height: 325px;
   background-color: #f2f2f2;
   font-family: roboto, sans-serif;
 }
 .reserver__title {
   display: flex;
+  justify-content: center;
   font-size: 25px;
   font-weight: bold;
-  width: 220px;
 }
 .reserver__discover {
   display: flex;
-  width: 260px;
+  justify-content: center;
 }
-.reserver__explore {
+.reserver__explorer {
   display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=style.css.map */

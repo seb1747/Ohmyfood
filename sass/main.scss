@@ -33,21 +33,22 @@
 }
 .reserver {
   display: flex;
+  justify-content: space-around;
   flex-direction: column;
-  justify-content: center;
-  height: 350px;
+  height: 325px;
   background-color: $background-menu;
   @include famillytext;
   &__title {
     display: flex;
+    justify-content: center;
     @include under-title;
-    width: 220px;
   }
   &__discover {
     display: flex;
-    width: 260px;
+    justify-content: center;
   }
-  &__explore {
+  &__explorer {
     display: flex;
+    justify-content: center;
   }
 }
