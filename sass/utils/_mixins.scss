@@ -1,4 +1,15 @@
 @mixin fonttextsize {
-  font-size: 14px;
+  font-size: 16px;
+  font-weight: 700;
+}
+@mixin famillytext {
+  font-family: roboto, sans-serif;
+}
+@mixin title-familly {
+  font-family: Shrikhand, sans-serif;
+  font-size: 40px;
+}
+@mixin under-title {
+  font-size: 25px;
   font-weight: bold;
 }
