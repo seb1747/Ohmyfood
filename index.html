@@ -4,6 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/normalise.css" />
     <link rel="stylesheet" href="./css/style.css" />
     <script
       src="https://kit.fontawesome.com/a758d68aef.js"
@@ -14,19 +15,23 @@
   <body>
     <header>
       <h1 class="logo">ohmyfood</h1>
-      <div class="location">
+      <form class="location" method="post" action="#">
         <span class="location__dot"
           ><i class="fa-solid fa-location-dot"></i>
         </span>
-        <div class="location__text">Paris, Belleville</div>
-      </div>
+        <input
+          class="location__text"
+          type="text"
+          placeholder="Paris, Belleville"
+        />
+      </form>
     </header>
-    <section class="reserver">
-      <h2 class="reserver__title">Réserver le menu qui <br />vous convient</h2>
+    <article class="reserver">
+      <h2 class="reserver__title">Réserver le menu qui vous convient</h2>
       <p class="reserver__discover">
-        Découvrez des restaurants d'exception, <br />sélectionnés par nos soins.
+        Découvrez des restaurants d'exception, sélectionnés par nos soins.
       </p>
-      <span class="reserver__explorer">Explorer nos restaurants</span>
-    </section>
+      <nav class="reserver__explorer"><a href="#">Explorer nos restaurants</nav></a
+    </article>
   </body>
 </html>
