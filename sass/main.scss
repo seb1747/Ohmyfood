@@ -63,7 +63,7 @@
     text-decoration: none;
     height: 70px;
     color: white;
-    background-color: $color-secondary;
+    background-image: linear-gradient($color-primary, $color-secondary);
     border-radius: 30px;
   }
 }
