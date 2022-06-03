@@ -2,8 +2,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 @import "./utils/variables";
 @import "./utils/mixins";
-* {
+body {
   box-sizing: border-box;
+  @include media;
 }
 header {
   margin-top: 15px;
@@ -21,6 +22,7 @@ input::-moz-placeholder {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
   box-shadow: black 4px;
   height: 60px;
   @include title-familly;
@@ -33,13 +35,13 @@ input::-moz-placeholder {
   height: 50px;
   background-color: $background-header;
   &__dot {
-    display: flex;
+    justify-content: center;
+    align-items: center;
     color: black;
-    width: 25px;
+    width: 50px;
   }
   &__text {
     display: flex;
-    text-align: center;
     width: 120px;
     border: none;
     outline: none;
@@ -55,7 +57,6 @@ input::-moz-placeholder {
   align-items: center;
   flex-direction: column;
   height: 325px;
-  width: 100%;
   background-color: $background-menu;
   @include famillytext;
   &__title {
@@ -123,5 +124,19 @@ li {
     display: flex;
     background-color: $background-menu;
     height: 80px;
+  }
+}
+.restaurants {
+  background-color: $background-menu;
+  @include fonttextsize;
+}
+.card {
+  display: flex;
+  flex-direction: column;
+  background-color: white;
+  height: 255px;
+  border-radius: 25px 25px 25px 25px;
+  &__image {
+    display: flex;
   }
 }

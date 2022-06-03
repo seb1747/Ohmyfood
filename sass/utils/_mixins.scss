@@ -1,6 +1,6 @@
 @mixin fonttextsize {
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
 }
 @mixin famillytext {
   font-family: roboto, sans-serif;
@@ -12,4 +12,8 @@
 @mixin under-title {
   font-size: 25px;
   font-weight: bold;
+}
+@mixin media {
+  max-width: 768px;
+  min-width: 365px;
 }
