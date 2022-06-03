@@ -48,7 +48,6 @@ input::-moz-placeholder {
     opacity: 1;
     background-color: $background-header;
     @include fonttextsize;
-    @include famillytext;
   }
 }
 .reserver {
@@ -58,7 +57,7 @@ input::-moz-placeholder {
   flex-direction: column;
   height: 325px;
   background-color: $background-menu;
-  @include famillytext;
+
   &__title {
     display: flex;
     justify-content: center;
@@ -110,10 +109,10 @@ li {
   display: flex;
   justify-content: space-around;
   flex-direction: column;
-  margin-left: 10px;
+  padding-left: 20px;
   height: 440px;
   &__title {
-    @include famillytext;
+    @include under-title;
   }
 }
 .fonctionnement__list {
@@ -128,15 +127,42 @@ li {
 }
 .restaurants {
   background-color: $background-menu;
-  @include fonttextsize;
+
+  &__title {
+    @include under-title;
+    padding-left: 20px;
+  }
 }
+
 .card {
   display: flex;
   flex-direction: column;
   background-color: white;
   height: 255px;
-  border-radius: 25px 25px 25px 25px;
-  &__image {
-    display: flex;
-  }
+  padding-left: 20px;
+  border-radius: 15px 15px 15px 15px;
+}
+figure {
+  position: relative;
+  text-decoration: none;
+  width: 100%;
+  margin: 0%;
+  border-radius: 25px 25px;
+}
+.card__image {
+  width: 100%;
+  height: 175px;
+  object-fit: cover;
+  border-radius: 15px 15px 0px 0px;
+}
+.new {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  width: 82px;
+  text-align: center;
+  color: #279d80;
+  background-color: $color-tertiary;
+  text-decoration: none;
+  @include fonttextsize;
 }
