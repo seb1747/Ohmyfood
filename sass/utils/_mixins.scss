@@ -3,7 +3,11 @@
   font-size: 18px;
   font-weight: 300;
 }
-
+@mixin familly-text {
+  font-family: roboto, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+}
 @mixin title-familly {
   font-family: Shrikhand, sans-serif;
   font-size: 33px;

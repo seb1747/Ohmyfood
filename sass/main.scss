@@ -127,20 +127,44 @@ li {
 }
 .restaurants {
   background-color: $background-menu;
+  padding-top: 60px;
+  padding-bottom: 65px;
 
   &__title {
     @include under-title;
     padding-left: 20px;
+    margin-bottom: 30px;
   }
 }
 
 .card {
   display: flex;
   flex-direction: column;
+  gap: 15px;
   background-color: white;
   height: 255px;
-  padding-left: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
   border-radius: 15px 15px 15px 15px;
+  &__name {
+    position: relative;
+    @include familly-text;
+    width: 70%;
+    padding-left: 15px;
+  }
+  &__loc {
+    position: relative;
+    @include fonttextsize;
+    width: 70%;
+    padding-left: 15px;
+  }
+}
+.card__heart i {
+  display: flex;
+  position: absolute;
+  top: 195px;
+  right: 15px;
 }
 figure {
   position: relative;
@@ -156,13 +180,21 @@ figure {
   border-radius: 15px 15px 0px 0px;
 }
 .new {
+  display: flex;
+  justify-content: center;
   position: absolute;
   top: 15px;
   right: 15px;
   width: 82px;
-  text-align: center;
+  height: 32px;
+
+  align-items: center;
   color: #279d80;
+  border-radius: 5px 5px 5px 5px;
   background-color: $color-tertiary;
   text-decoration: none;
   @include fonttextsize;
+}
+ul {
+  list-style: none;
 }

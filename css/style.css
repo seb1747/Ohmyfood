@@ -146,21 +146,50 @@ li {
 
 .restaurants {
   background-color: #f2f2f2;
+  padding-top: 60px;
+  padding-bottom: 65px;
 }
 .restaurants__title {
   font-family: roboto, sans-serif;
   font-size: 25px;
   font-weight: bold;
   padding-left: 20px;
+  margin-bottom: 30px;
 }
 
 .card {
   display: flex;
   flex-direction: column;
+  gap: 15px;
   background-color: white;
   height: 255px;
-  padding-left: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-bottom: 30px;
   border-radius: 15px 15px 15px 15px;
+}
+.card__name {
+  position: relative;
+  font-family: roboto, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  width: 70%;
+  padding-left: 15px;
+}
+.card__loc {
+  position: relative;
+  font-family: roboto, sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  width: 70%;
+  padding-left: 15px;
+}
+
+.card__heart i {
+  display: flex;
+  position: absolute;
+  top: 195px;
+  right: 15px;
 }
 
 figure {
@@ -179,17 +208,25 @@ figure {
 }
 
 .new {
+  display: flex;
+  justify-content: center;
   position: absolute;
   top: 15px;
   right: 15px;
   width: 82px;
-  text-align: center;
+  height: 32px;
+  align-items: center;
   color: #279d80;
+  border-radius: 5px 5px 5px 5px;
   background-color: #99e2d0;
   text-decoration: none;
   font-family: roboto, sans-serif;
   font-size: 18px;
   font-weight: 300;
+}
+
+ul {
+  list-style: none;
 }
 
 /*# sourceMappingURL=style.css.map */
