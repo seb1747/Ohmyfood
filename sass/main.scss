@@ -148,24 +148,36 @@ li {
   margin-bottom: 30px;
   border-radius: 15px 15px 15px 15px;
   &__name {
+    display: flex;
+    flex-direction: column;
     position: relative;
     @include familly-text;
-    width: 70%;
+    width: 100%;
     padding-left: 15px;
   }
   &__loc {
-    position: relative;
+    justify-content: flex-start;
     @include fonttextsize;
     width: 70%;
-    padding-left: 15px;
+    padding-top: 10px;
+  }
+  &__heart {
+    position: absolute;
+    top: 15px;
+    right: 50px;
+    width: 24px;
+    height: 24px;
   }
 }
 .card__heart i {
-  display: flex;
-  position: absolute;
-  top: 195px;
-  right: 15px;
+  font-size: 24px;
+  font-weight: 200;
+  color: #000;
 }
+.card__heart i:hover {
+  background-color: linear-gradient($color-primary, $color-secondary);
+}
+
 figure {
   position: relative;
   text-decoration: none;

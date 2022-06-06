@@ -169,27 +169,39 @@ li {
   border-radius: 15px 15px 15px 15px;
 }
 .card__name {
+  display: flex;
+  flex-direction: column;
   position: relative;
   font-family: roboto, sans-serif;
   font-size: 18px;
   font-weight: bold;
-  width: 70%;
+  width: 100%;
   padding-left: 15px;
 }
 .card__loc {
-  position: relative;
+  justify-content: flex-start;
   font-family: roboto, sans-serif;
   font-size: 18px;
   font-weight: 300;
   width: 70%;
-  padding-left: 15px;
+  padding-top: 10px;
+}
+.card__heart {
+  position: absolute;
+  top: 15px;
+  right: 50px;
+  width: 24px;
+  height: 24px;
 }
 
 .card__heart i {
-  display: flex;
-  position: absolute;
-  top: 195px;
-  right: 15px;
+  font-size: 24px;
+  font-weight: 200;
+  color: #000;
+}
+
+.card__heart i:hover {
+  background-color: linear-gradient(#9356dc, #ff79da);
 }
 
 figure {
