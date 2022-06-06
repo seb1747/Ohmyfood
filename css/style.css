@@ -102,24 +102,6 @@ input::-moz-placeholder {
   color: white;
 }
 
-ol {
-  list-style: none;
-  counter-reset: li;
-}
-
-li::before {
-  content: counter(li);
-  background-color: #9356dc;
-  width: 30px;
-  border-radius: 50%;
-}
-
-li {
-  display: flex;
-  counter-increment: li;
-  height: 30px;
-}
-
 .fonctionnement {
   display: flex;
   justify-content: space-around;
@@ -135,13 +117,27 @@ li {
 
 .fonctionnement__list {
   display: flex;
-  justify-content: space-around;
   height: 300px;
 }
 .fonctionnement__list__list-items {
   display: flex;
   background-color: #f2f2f2;
   height: 80px;
+}
+.fonctionnement__list ol {
+  list-style: none;
+  counter-reset: li;
+}
+.fonctionnement__list li::before {
+  content: counter(li);
+  background-color: #9356dc;
+  width: 30px;
+  border-radius: 50%;
+}
+.fonctionnement__list li {
+  display: flex;
+  counter-increment: li;
+  height: 30px;
 }
 
 .restaurants {
@@ -200,10 +196,6 @@ li {
   color: #000;
 }
 
-.card__heart i:hover {
-  background-color: linear-gradient(#9356dc, #ff79da);
-}
-
 figure {
   position: relative;
   text-decoration: none;
@@ -239,6 +231,21 @@ figure {
 
 ul {
   list-style: none;
+  text-decoration: none;
+  color: white;
+}
+
+.footer {
+  background-color: #000;
+}
+.footer__title {
+  margin: 0%;
+  padding-left: 15px;
+  padding-top: 20px;
+  font-family: Shrikhand, sans-serif;
+  font-size: 33px;
+  color: white;
+  font-size: 18px;
 }
 
 /*# sourceMappingURL=style.css.map */

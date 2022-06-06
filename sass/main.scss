@@ -89,21 +89,6 @@ input::-moz-placeholder {
   text-decoration: none;
   color: white;
 }
-ol {
-  list-style: none;
-  counter-reset: li;
-}
-li::before {
-  content: counter(li);
-  background-color: $color-primary;
-  width: 30px;
-  border-radius: 50%;
-}
-li {
-  display: flex;
-  counter-increment: li;
-  height: 30px;
-}
 
 .fonctionnement {
   display: flex;
@@ -117,13 +102,14 @@ li {
 }
 .fonctionnement__list {
   display: flex;
-  justify-content: space-around;
+
   height: 300px;
   &__list-items {
     display: flex;
     background-color: $background-menu;
     height: 80px;
   }
+  @include list;
 }
 .restaurants {
   background-color: $background-menu;
@@ -174,10 +160,6 @@ li {
   font-weight: 200;
   color: #000;
 }
-.card__heart i:hover {
-  background-color: linear-gradient($color-primary, $color-secondary);
-}
-
 figure {
   position: relative;
   text-decoration: none;
@@ -209,4 +191,17 @@ figure {
 }
 ul {
   list-style: none;
+  text-decoration: none;
+  color: white;
+}
+.footer {
+  background-color: #000;
+  &__title {
+    margin: 0%;
+    padding-left: 15px;
+    padding-top: 20px;
+    @include title-familly;
+    color: white;
+    font-size: 18px;
+  }
 }
