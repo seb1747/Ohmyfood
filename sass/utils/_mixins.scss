@@ -12,6 +12,11 @@
   font-family: Shrikhand, sans-serif;
   font-size: 33px;
 }
+@mixin text-familly {
+  font-family: roboto, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
 @mixin under-title {
   font-family: roboto, sans-serif;
   font-size: 25px;
@@ -20,21 +25,4 @@
 @mixin media {
   max-width: 768px;
   min-width: 365px;
-}
-@mixin list {
-  ol {
-    list-style: none;
-    counter-reset: li;
-  }
-  li::before {
-    content: counter(li);
-    background-color: $color-primary;
-    width: 30px;
-    border-radius: 50%;
-  }
-  li {
-    display: flex;
-    counter-increment: li;
-    height: 30px;
-  }
 }
