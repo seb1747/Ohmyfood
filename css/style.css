@@ -57,7 +57,7 @@ input::-moz-placeholder {
   background-color: #e1dede;
   font-family: roboto, sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .reserver {
@@ -84,7 +84,7 @@ input::-moz-placeholder {
   text-align: center;
   font-family: roboto, sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
   height: 50px;
   width: 80%;
 }
@@ -105,7 +105,7 @@ input::-moz-placeholder {
   text-decoration: none;
   font-family: roboto, sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
   color: white;
 }
 
@@ -220,7 +220,7 @@ input::-moz-placeholder {
   justify-content: flex-start;
   font-family: roboto, sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
   width: 70%;
   padding-top: 10px;
 }
@@ -268,7 +268,7 @@ figure {
   text-decoration: none;
   font-family: roboto, sans-serif;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 300;
 }
 
 .footer {
