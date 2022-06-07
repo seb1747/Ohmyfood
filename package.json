@@ -4,7 +4,7 @@
   "description": "projet_3",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/style.css"
+    "sass": "sass --watch ./sass/main.scss:./css/style.css ./sass/main_menu.scss:./css/menu.style.css"
   },
   "author": "binet sebastien",
   "license": "ISC"
