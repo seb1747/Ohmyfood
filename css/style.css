@@ -31,7 +31,7 @@ input::-moz-placeholder {
   box-shadow: black 4px;
   height: 60px;
   font-family: Shrikhand, sans-serif;
-  font-size: 33px;
+  font-size: 28px;
   margin: 0px;
 }
 
@@ -211,7 +211,7 @@ input::-moz-placeholder {
   flex-direction: column;
   position: relative;
   font-family: roboto, sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
   width: 100%;
   padding-left: 15px;
@@ -279,7 +279,7 @@ figure {
   padding-left: 20px;
   padding-top: 20px;
   font-family: Shrikhand, sans-serif;
-  font-size: 33px;
+  font-size: 28px;
   color: white;
   font-size: 18px;
 }

@@ -3,14 +3,18 @@
   font-size: 18px;
   font-weight: 300;
 }
+@mixin menutextsize {
+  font-family: roboto, sans-serif;
+  font-size: 14px;
+}
 @mixin familly-text {
   font-family: roboto, sans-serif;
-  font-size: 18px;
+  font-size: 20px;
   font-weight: bold;
 }
 @mixin title-familly {
   font-family: Shrikhand, sans-serif;
-  font-size: 33px;
+  font-size: 28px;
 }
 @mixin text-familly {
   font-family: roboto, sans-serif;
