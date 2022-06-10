@@ -238,15 +238,6 @@ input::-moz-placeholder {
   width: 70%;
   padding-top: 10px;
 }
-.card__heart {
-  position: absolute;
-  top: 195px;
-  right: 50px;
-  width: 24px;
-  height: 24px;
-  color: grey;
-  cursor: pointer;
-}
 
 .card a {
   text-decoration: none;
@@ -254,16 +245,24 @@ input::-moz-placeholder {
 }
 
 .card__heart {
+  position: absolute;
+  top: 195px;
   font-size: 24px;
-  font-weight: 200;
+  right: 50px;
+  width: 24px;
+  height: 24px;
+  color: grey;
+  cursor: pointer;
 }
-.card__heart .icon {
-  background-color: #fff;
+.card__heart.fa-stack {
+  opacity: 0;
 }
-.card__heart:hover i {
-  animation: heart 450ms forwards;
+.card__heart:hover {
+  animation: heart 550ms forwards;
   background: linear-gradient(#9356dc, #ff79da);
   background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 figure {
