@@ -23,7 +23,7 @@ input::placeholder {
   color: black;
 }
 
-input[type=text]:-moz-placeholder {
+input[type="text"]:-moz-placeholder {
   color: #000;
 }
 
@@ -36,7 +36,6 @@ input::-moz-placeholder {
   justify-content: center;
   align-items: center;
   text-align: center;
-  box-shadow: black 4px;
   height: 60px;
   font-family: Shrikhand, sans-serif;
   font-size: 28px;
@@ -151,6 +150,15 @@ input::-moz-placeholder {
   font-family: roboto, sans-serif;
   font-size: 16px;
   font-weight: bold;
+  transform: scale(1);
+}
+.fonctionnement a:hover {
+  background-color: #e0cbe8;
+  transform: scale(1.03);
+  transition: 300ms;
+}
+.fonctionnement a:hover .btnIcon {
+  color: #9356dc;
 }
 
 .fonctionnement li {
@@ -245,6 +253,7 @@ input::-moz-placeholder {
 }
 
 .card__heart {
+  display: flex;
   position: absolute;
   top: 195px;
   font-size: 24px;
@@ -254,11 +263,11 @@ input::-moz-placeholder {
   color: grey;
   cursor: pointer;
 }
-.card__heart.fa-stack {
+.card__heart .bgnone {
   opacity: 0;
 }
-.card__heart:hover {
-  animation: heart 550ms forwards;
+.card__heart:hover i {
+  animation: heart 600ms forwards;
   background: linear-gradient(#9356dc, #ff79da);
   background-clip: text;
   -webkit-background-clip: text;
@@ -299,10 +308,11 @@ figure {
 }
 
 .footer {
+  margin-top: -15%;
   background-color: #000;
 }
 .footer__title {
-  margin: 0%;
+  margin-top: 65px;
   padding-left: 20px;
   padding-top: 20px;
   font-family: Shrikhand, sans-serif;

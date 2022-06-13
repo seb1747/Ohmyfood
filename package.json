@@ -4,8 +4,10 @@
   "description": "projet_3",
   "main": "index.js",
   "scripts": {
-    "sass": "sass --watch ./sass/main.scss:./css/style.css ./sass/main_menu.scss:./css/menu.style.css"
+    "sass": "sass --watch ./sass/main.scss:./css/style.css ./sass/main_menu.scss:./css/menu.style.css",
+    "prefix": "postcss ./css/style.css ./css/menu.style.css --use autoprefixer -d ./css/prefixed/"
   },
   "author": "binet sebastien",
-  "license": "ISC"
+  "license": "ISC",
+  "browserslist": "last 4 versions"
 }

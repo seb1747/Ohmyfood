@@ -122,6 +122,15 @@ input::-moz-placeholder {
   border-radius: 20px 20px 20px 20px;
   box-shadow: #ebebeb 3px 3px 3px;
   @include text-familly;
+  transform: scale(1);
+  &:hover {
+    background-color: $background-overflow;
+    transform: scale(1.03);
+    transition: 300ms;
+    .btnIcon{
+      color: $color-primary;
+    }
+  }
 }
 .fonctionnement li {
   display: flex;
@@ -204,6 +213,7 @@ input::-moz-placeholder {
   color: #000;
 }
 .card__heart {
+  display: flex;
   position: absolute;
   top: 195px;
   font-size: 24px;
@@ -212,11 +222,12 @@ input::-moz-placeholder {
   height: 24px;
   color: grey;
   cursor: pointer;
-  &.fa-stack {
+
+  .bgnone {
     opacity: 0;
   }
-  &:hover {
-    animation: heart 550ms forwards;
+  &:hover i {
+    animation: heart 600ms forwards;
     background: linear-gradient($color-primary, $color-secondary);
     background-clip: text;
     -webkit-background-clip: text;
@@ -254,9 +265,10 @@ figure {
 }
 
 .footer {
+  margin-top: -15%;
   background-color: #000;
   &__title {
-    margin: 0%;
+    margin-top: 65px;
     padding-left: 20px;
     padding-top: 20px;
     @include title-familly;
