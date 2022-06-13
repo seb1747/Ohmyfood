@@ -9,6 +9,14 @@
     opacity: 1;
   }
 }
+@keyframes rotate {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
 body {
   box-sizing: border-box;
   max-width: 768px;
@@ -23,7 +31,7 @@ input::placeholder {
   color: black;
 }
 
-input[type="text"]:-moz-placeholder {
+input[type=text]:-moz-placeholder {
   color: #000;
 }
 
@@ -36,6 +44,7 @@ input::-moz-placeholder {
   justify-content: center;
   align-items: center;
   text-align: center;
+  box-shadow: black 4px;
   height: 60px;
   font-family: Shrikhand, sans-serif;
   font-size: 28px;
