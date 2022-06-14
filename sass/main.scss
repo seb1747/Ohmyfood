@@ -6,6 +6,12 @@
 body {
   box-sizing: border-box;
   @include media;
+  @media (min-width: $tablet-responsive){
+    max-width: 100%;
+  }
+  @media (min-width: $desktop-responsive){
+    max-width: 100%;
+  }
 }
 header {
   margin-top: 15px;
@@ -86,12 +92,22 @@ input::-moz-placeholder {
     background-image: linear-gradient($color-secondary, $color-primary);
     border-radius: 30px;
     margin-bottom: 65px;
+    &:hover{
+      background-image: linear-gradient($color-secondary 30%, $color-primary);
+      @include box-shadow;
+      transform: scale(1.03);
+      transition: 400ms;
+    }
+    
+  }  
+  
   }
-}
+
 .reserver__explorer a {
   text-decoration: none;
   @include fonttextsize;
   color: white;
+  transform: scale(1);
 }
 
 .fonctionnement {
@@ -115,8 +131,8 @@ input::-moz-placeholder {
   text-decoration: none;
   background-color: #f6f6f6;
   color: #2e2e2e;
-  padding-right: 30px;
   margin-right: 15px;
+  margin-left: 15px;
   width: 100%;
   height: 100%;
   border-radius: 20px 20px 20px 20px;
@@ -167,12 +183,19 @@ input::-moz-placeholder {
 .restaurants {
   background-color: $background-menu;
   padding-top: 60px;
-  padding-bottom: 65px;
-
+  padding-bottom: 35px;
+  height: 100%;
+  @media (min-width: $tablet-responsive) {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width:100%;
+  }
   &__title {
     @include under-title;
     padding-left: 20px;
     margin-bottom: 30px;
+    width: 100%;
   }
 }
 
@@ -207,6 +230,13 @@ input::-moz-placeholder {
     width: 70%;
     padding-top: 10px;
   }
+  @media (min-width: $tablet-responsive){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 46%;
+  }
+  
 }
 .card a {
   text-decoration: none;
@@ -215,7 +245,7 @@ input::-moz-placeholder {
 .card__heart {
   display: flex;
   position: absolute;
-  top: 195px;
+  top: 215px;
   font-size: 24px;
   right: 50px;
   width: 24px;
@@ -244,7 +274,7 @@ figure {
 }
 .card__image {
   width: 100%;
-  height: 175px;
+  height: 195px;
   object-fit: cover;
   border-radius: 15px 15px 0px 0px;
 }
@@ -263,12 +293,16 @@ figure {
   text-decoration: none;
   @include fonttextsize;
 }
-
+footer{
+  display: flex;
+  width: 100%;
+}
 .footer {
-  margin-top: -15%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   background-color: #000;
-  &__title {
-    margin-top: 65px;
+  &__title {    
     padding-left: 20px;
     padding-top: 20px;
     @include title-familly;
@@ -286,4 +320,7 @@ footer a {
 footer ul {
   list-style: none;
   padding: 0%;
+}
+footer li{
+  padding-bottom: 15px;
 }
