@@ -127,7 +127,8 @@ input::-moz-placeholder {
     background-color: $background-overflow;
     transform: scale(1.03);
     transition: 300ms;
-    .btnIcon{
+    @include box-shadow;
+    .btnIcon {
       color: $color-primary;
     }
   }
@@ -153,11 +154,9 @@ input::-moz-placeholder {
   color: #7e7e7e;
 }
 .fonctionnement__list__order {
-  justify-content: center;
-  align-items: center;
   position: absolute;
   font-size: 14px;
-  left: 15px;
+  left: -10px;
   color: #fff;
   background-color: $color-primary;
   padding-top: 5px;
@@ -192,6 +191,7 @@ input::-moz-placeholder {
   &:hover {
     transform: scale(1.05);
     transition: 300ms;
+    @include box-shadow;
   }
   &__name {
     display: flex;
