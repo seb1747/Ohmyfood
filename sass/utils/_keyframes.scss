@@ -23,3 +23,42 @@
     opacity: 1;
   }
 }
+@keyframes dish{
+  0%{
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  25%{
+    opacity: 1;
+    transform: rotate(90deg);
+  }
+  50%{
+    opacity: 1;
+    transform: rotate(180deg);
+    }
+    75%{
+      opacity: 1;
+      transform: rotate(270deg);
+    }
+    100%{
+      opacity: 1;
+      transform: rotate(360deg);
+    }
+}
+@keyframes loader{
+  0%{
+    opacity: 1;
+  }
+  25%{
+    opacity: 1;
+  }
+  50%{
+    opacity: 1;
+  }
+  75%{
+    opacity: 1;
+  }
+  100%{
+    opacity: 0;
+  }
+}

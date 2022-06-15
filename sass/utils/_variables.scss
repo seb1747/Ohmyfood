@@ -12,3 +12,10 @@ $background-overflow: #e0cbe8;
 
 $tablet-responsive: 768px;
 $desktop-responsive: 1440px;
+
+/*variables loader*/
+
+$anim-duration : 1500ms;
+$num-dish: 3;
+$anim-delay: $anim-duration, $num-dish;
+$color-dish: $color-tertiary;
