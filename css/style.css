@@ -423,8 +423,6 @@ footer {
 }
 
 .footer {
-  display: flex;
-  flex-direction: column;
   width: 100%;
   background-color: #000;
 }
@@ -436,8 +434,26 @@ footer {
   color: white;
   font-size: 18px;
 }
+@media (min-width: 1440px) {
+  .footer__title {
+    text-align: center;
+    font-size: 22px;
+  }
+}
 .footer__list {
+  padding-bottom: 15px;
   padding-left: 20px;
+}
+.footer__list li {
+  padding-bottom: 15px;
+}
+@media (min-width: 1440px) {
+  .footer__list {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    font-size: 18px;
+  }
 }
 
 footer a {
