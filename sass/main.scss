@@ -118,8 +118,8 @@ input::-moz-placeholder {
     @include under-title;
   }
 }
-.fonctionnement__title{
-  @media (min-width: $desktop-responsive){
+.fonctionnement__title {
+  @media (min-width: $desktop-responsive) {
     align-items: center;
     text-align: center;
   }
@@ -152,7 +152,7 @@ input::-moz-placeholder {
       color: $color-primary;
     }
   }
-  @media (min-width: $desktop-responsive){
+  @media (min-width: $desktop-responsive) {
     width: 50%;
   }
 }
@@ -203,7 +203,7 @@ input::-moz-placeholder {
     padding-left: 20px;
     margin-bottom: 30px;
     width: 100%;
-    @media (min-width: $desktop-responsive){
+    @media (min-width: $desktop-responsive) {
       text-align: center;
     }
   }
