@@ -577,9 +577,9 @@ input::-moz-placeholder {
   position: absolute;
   top: 215px;
   font-size: 24px;
-  right: 50px;
-  width: 24px;
-  height: 24px;
+  right: 55px;
+  width: 50px;
+  height: 50px;
   color: grey;
   cursor: pointer;
 }
