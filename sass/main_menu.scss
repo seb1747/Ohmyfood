@@ -6,10 +6,10 @@
 body {
   box-sizing: border-box;
   @include media;
-  @media (min-width: $tablet-responsive){
+  @media (min-width: $tablet-responsive) {
     max-width: 100%;
   }
-  @media (min-width: $desktop-responsive){
+  @media (min-width: $desktop-responsive) {
     max-width: 100%;
   }
 }
@@ -19,9 +19,9 @@ header {
   margin-top: 15px;
   width: 100%;
   height: 60px;
-  @media (min-width: $desktop-responsive){
+  @media (min-width: $desktop-responsive) {
     max-width: 100%;
-    height: 90px;
+    height: 110px;
   }
 }
 .header {
@@ -30,9 +30,10 @@ header {
   align-items: center;
   text-align: center;
   width: 100%;
+  height: 90px;
   padding-left: 15px;
   margin: 0px;
-  @media (min-width: $desktop-responsive){
+  @media (min-width: $desktop-responsive) {
     justify-content: center;
   }
 }
@@ -42,17 +43,19 @@ header {
   align-items: flex-start;
   width: 15%;
   height: 50px;
-  @media (min-width: $desktop-responsive){
+  @media (min-width: $desktop-responsive) {
     justify-content: center;
     width: 35%;
+    font-size: 26px;
   }
 }
 .header h1 {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 85%;
   @include title-familly;
-  @media (min-width: $desktop-responsive){
+  @media (min-width: $desktop-responsive) {
     justify-content: center;
     width: 55%;
   }
@@ -65,8 +68,7 @@ a {
   display: flex;
   flex-direction: column;
   width: 100%;
-  min-height: 1320px;
-  
+  height: 100%;
 }
 .menu img {
   display: flex;
@@ -74,8 +76,12 @@ a {
   z-index: -1;
   object-fit: cover;
   height: 260px;
-  @media (min-width: $desktop-responsive){
-    height: 400px;
+  @media (min-width: $desktop-responsive) {
+    height: 600px;
+    border-radius: 15px;
+  }
+  @media (min-width: $tablet-responsive) {
+    height: 500px;
     border-radius: 15px;
   }
 }
@@ -86,9 +92,9 @@ a {
   min-height: 80%;
   background-color: $background-menu;
   border-radius: 20px 20px 0px 0px;
-  @media (min-width: $desktop-responsive){
+  @media (min-width: $desktop-responsive) {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
   }
 }
 .menu__favorite {
@@ -96,9 +102,14 @@ a {
   justify-content: space-between;
   right: 30px;
   font-size: 22px;
-  @media (min-width: $desktop-responsive){
+  @media (min-width: $desktop-responsive) {
     justify-content: center;
-    padding-left:-40px;
+    align-items: center;
+    padding-right: 30px;
+  }
+  @media (min-width: $tablet-responsive) {
+    justify-content: center;
+    padding-right:30px;
   }
 }
 .fa-stack {
@@ -121,15 +132,17 @@ a {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
   }
-  @media (min-width: $desktop-responsive){
-    right: 0;
-    width: 50px;
+  @media (min-width: $desktop-responsive) {
+    width: 100px;
+    padding-left: 30px;
+  }
+  @media (min-width: $tablet-responsive) {
+    width: 100px;
   }
 }
 h1 {
   @include title-familly;
   padding-left: 15px;
-  padding-top: 15px;
 }
 h2 {
   @include fonttextsize;
@@ -139,26 +152,32 @@ h2 {
   width: 5%;
   margin-top: 40px;
 }
-.entrées
- {
+.entrées {
   margin: 15px 15px 15px 15px;
   animation: apparition 1000ms forwards;
- 
+  @media (min-width: $desktop-responsive) {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+  }
 }
-.plats{
+.plats {
   margin: 15px 15px 15px 15px;
   animation: apparition 1000ms both 1000ms;
-  /*@media (min-width: $desktop-responsive){
-    order: 0;
+  @media (min-width: $desktop-responsive) {
+    display: flex;
+    flex-direction: column;
     width: 25%;
-  }*/
+  }
 }
-.desserts{
+.desserts {
   margin: 15px 15px 15px 15px;
   animation: apparition 1000ms both 2000ms;
- /* @media (min-width: $desktop-responsive){
+  @media (min-width: $desktop-responsive) {
+    display: flex;
+    flex-direction: column;
     width: 25%;
-  }*/
+  }
 }
 .btn {
   display: flex;
@@ -235,11 +254,16 @@ h2 {
   width: 100%;
   padding-top: 40px;
   margin-bottom: 65px;
+  @media (min-width: $desktop-responsive) {
+    width: 30%;
+    align-content: flex-end;
+    align-items: flex-end;
+    margin-bottom: 35px;
+  }
 }
 .command a {
   display: flex;
   justify-content: center;
-
   text-align: center;
   align-items: center;
   text-decoration: none;
@@ -271,12 +295,22 @@ footer {
     @include title-familly;
     color: white;
     font-size: 18px;
+    @media (min-width: $desktop-responsive) {
+      text-align: center;
+      font-size: 22px;
+    }
   }
   &__list {
     padding-bottom: 15px;
     padding-left: 20px;
     li {
       padding-bottom: 15px;
+    }
+    @media (min-width: $desktop-responsive) {
+      display: flex;
+      justify-content: space-around;
+      flex-direction: row;
+      font-size: 18px;
     }
   }
 }
