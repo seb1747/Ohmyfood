@@ -1,6 +1,8 @@
 @import url("https://fonts.googleapis.com/css2?family=roboto:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,200;1,300;1,500;1,600;1,700;1,800;1,900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
 /*variables background*/
+/*variables responsive*/
+/*variables loader*/
 @keyframes heart {
   0% {
     opacity: 0;
@@ -17,10 +19,67 @@
     transform: rotate(360deg);
   }
 }
+@keyframes apparition {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes dish {
+  0% {
+    opacity: 0;
+    transform: rotate(0deg);
+  }
+  25% {
+    opacity: 1;
+    transform: rotate(90deg);
+  }
+  50% {
+    opacity: 1;
+    transform: rotate(180deg);
+  }
+  75% {
+    opacity: 1;
+    transform: rotate(270deg);
+  }
+  100% {
+    opacity: 1;
+    transform: rotate(360deg);
+  }
+}
+@keyframes loader {
+  0% {
+    opacity: 1;
+  }
+  25% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
 body {
   box-sizing: border-box;
   max-width: 768px;
   min-width: 365px;
+}
+@media (min-width: 768px) {
+  body {
+    max-width: 100%;
+  }
+}
+@media (min-width: 1440px) {
+  body {
+    max-width: 100%;
+  }
 }
 
 header {
@@ -116,6 +175,12 @@ input::-moz-placeholder {
   border-radius: 30px;
   margin-bottom: 65px;
 }
+.reserver__explorer:hover {
+  background-image: linear-gradient(#ff79da 30%, #9356dc);
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  transform: scale(1.03);
+  transition: 400ms;
+}
 
 .reserver__explorer a {
   text-decoration: none;
@@ -123,6 +188,7 @@ input::-moz-placeholder {
   font-size: 18px;
   font-weight: 300;
   color: white;
+  transform: scale(1);
 }
 
 .fonctionnement {
@@ -138,6 +204,13 @@ input::-moz-placeholder {
   font-weight: bold;
 }
 
+@media (min-width: 1440px) {
+  .fonctionnement__title {
+    align-items: center;
+    text-align: center;
+  }
+}
+
 .fonctionnement ul {
   list-style: none;
   padding: 0%;
@@ -150,8 +223,8 @@ input::-moz-placeholder {
   text-decoration: none;
   background-color: #f6f6f6;
   color: #2e2e2e;
-  padding-right: 30px;
   margin-right: 15px;
+  margin-left: 15px;
   width: 100%;
   height: 100%;
   border-radius: 20px 20px 20px 20px;
@@ -165,9 +238,15 @@ input::-moz-placeholder {
   background-color: #e0cbe8;
   transform: scale(1.03);
   transition: 300ms;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 .fonctionnement a:hover .btnIcon {
   color: #9356dc;
+}
+@media (min-width: 1440px) {
+  .fonctionnement a {
+    width: 50%;
+  }
 }
 
 .fonctionnement li {
@@ -194,11 +273,9 @@ input::-moz-placeholder {
 }
 
 .fonctionnement__list__order {
-  justify-content: center;
-  align-items: center;
   position: absolute;
   font-size: 14px;
-  left: 15px;
+  left: -10px;
   color: #fff;
   background-color: #9356dc;
   padding-top: 5px;
@@ -210,7 +287,16 @@ input::-moz-placeholder {
 .restaurants {
   background-color: #f2f2f2;
   padding-top: 60px;
-  padding-bottom: 65px;
+  padding-bottom: 35px;
+  height: 100%;
+}
+@media (min-width: 768px) {
+  .restaurants {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 100%;
+  }
 }
 .restaurants__title {
   font-family: roboto, sans-serif;
@@ -218,6 +304,12 @@ input::-moz-placeholder {
   font-weight: bold;
   padding-left: 20px;
   margin-bottom: 30px;
+  width: 100%;
+}
+@media (min-width: 1440px) {
+  .restaurants__title {
+    text-align: center;
+  }
 }
 
 .card {
@@ -236,6 +328,7 @@ input::-moz-placeholder {
 .card:hover {
   transform: scale(1.05);
   transition: 300ms;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 .card__name {
   display: flex;
@@ -255,6 +348,14 @@ input::-moz-placeholder {
   width: 70%;
   padding-top: 10px;
 }
+@media (min-width: 768px) {
+  .card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 46%;
+  }
+}
 
 .card a {
   text-decoration: none;
@@ -264,7 +365,7 @@ input::-moz-placeholder {
 .card__heart {
   display: flex;
   position: absolute;
-  top: 195px;
+  top: 215px;
   font-size: 24px;
   right: 50px;
   width: 24px;
@@ -293,7 +394,7 @@ figure {
 
 .card__image {
   width: 100%;
-  height: 175px;
+  height: 195px;
   object-fit: cover;
   border-radius: 15px 15px 0px 0px;
 }
@@ -316,12 +417,18 @@ figure {
   font-weight: 300;
 }
 
+footer {
+  display: flex;
+  width: 100%;
+}
+
 .footer {
-  margin-top: -15%;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
   background-color: #000;
 }
 .footer__title {
-  margin-top: 65px;
   padding-left: 20px;
   padding-top: 20px;
   font-family: Shrikhand, sans-serif;
@@ -341,6 +448,52 @@ footer a {
 footer ul {
   list-style: none;
   padding: 0%;
+}
+
+footer li {
+  padding-bottom: 15px;
+}
+
+.loader {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: none;
+}
+.loader::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(210deg, #99e2d0, #9356dc, #ff79da);
+  z-index: 999;
+  animation: loader 3s forwards;
+}
+.loader p {
+  position: absolute;
+  top: 125px;
+  width: 65%;
+  border-radius: 50%;
+  border: solid 2px;
+  text-align: center;
+  color: #fff;
+  z-index: 999;
+  font-family: shrikhand;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  font-size: 65px;
+  animation: rotate 2500ms ease, loader 3000ms forwards;
+}
+.loader__dish {
+  position: absolute;
+  top: 300px;
+  z-index: 999;
+  width: 35%;
+  height: 30%;
+  font-size: 35px;
+  animation: dish 2500ms ease, rotate 2500ms both, loader 3000ms both;
 }
 
 /*# sourceMappingURL=style.css.map */
