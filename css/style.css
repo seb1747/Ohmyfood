@@ -490,8 +490,8 @@ footer li {
 }
 .loader p {
   position: absolute;
-  top: 125px;
-  width: 65%;
+  top: 155px;
+  width: 55%;
   border-radius: 50%;
   border: solid 2px;
   text-align: center;
@@ -499,12 +499,17 @@ footer li {
   z-index: 999;
   font-family: shrikhand;
   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-  font-size: 65px;
+  font-size: 30px;
   animation: rotate 2500ms ease, loader 3000ms forwards;
+}
+@media (min-width: 768px) {
+  .loader p {
+    font-size: 65px;
+  }
 }
 .loader__dish {
   position: absolute;
-  top: 300px;
+  top: 350px;
   z-index: 999;
   width: 35%;
   height: 30%;
