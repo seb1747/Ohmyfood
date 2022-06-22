@@ -54,7 +54,7 @@ header {
   justify-content: center;
   align-items: center;
   text-align: center;
-  
+
   width: 85%;
   @include title-familly;
   @media (min-width: $desktop-responsive) {
@@ -111,14 +111,14 @@ a {
   }
   @media (min-width: $tablet-responsive) {
     justify-content: center;
-    padding-right:30px;
+    padding-right: 30px;
   }
 }
 .fa-stack {
   display: flex;
   font-size: 24px;
   top: 15px;
-  right:15px;
+  right: 15px;
   width: 24px;
   height: 24px;
   color: grey;
@@ -140,6 +140,7 @@ a {
   }
   @media (min-width: $tablet-responsive) {
     width: 100px;
+    right: 0;
   }
 }
 h1 {
@@ -214,7 +215,6 @@ h2 {
       order: 2;
       width: 0%;
       transition: all 550ms cubic-bezier(0.47, 0.15, 0, 1);
-      
     }
     .fa-circle-check {
       font-size: 24px;
@@ -246,7 +246,7 @@ h2 {
     justify-content: flex-end;
     align-items: flex-end;
     @include text-familly;
-    
+
     height: 100%;
     padding-right: 15px;
   }
