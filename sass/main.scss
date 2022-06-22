@@ -30,7 +30,7 @@ input::-moz-placeholder {
   justify-content: center;
   align-items: center;
   text-align: center;
-  
+
   height: 60px;
   @include title-familly;
   margin: 0px;
@@ -256,7 +256,7 @@ input::-moz-placeholder {
   position: absolute;
   top: 215px;
   font-size: 24px;
-  right: 55px;
+  right: 15px;
   width: 50px;
   height: 50px;
   color: grey;
@@ -294,13 +294,15 @@ figure {
   top: 15px;
   right: 15px;
   width: 82px;
-  height: 32px;
+  height: 28px;
   align-items: center;
   color: #279d80;
-  border-radius: 5px 5px 5px 5px;
+  border-radius: 2px 2px 2px 2px;
   background-color: $color-tertiary;
   text-decoration: none;
   @include fonttextsize;
+  font-size: 14px;
+  font-weight: bold;
 }
 footer {
   display: flex;
@@ -308,13 +310,14 @@ footer {
 }
 .footer {
   width: 100%;
-  background-color: #000;
+  background-color: #353535;
   &__title {
     padding-left: 20px;
     padding-top: 20px;
+    padding-bottom: 30px;
     @include title-familly;
     color: white;
-    font-size: 18px;
+    font-size: 22px;
     @media (min-width: $desktop-responsive) {
       text-align: center;
       font-size: 22px;
@@ -325,6 +328,11 @@ footer {
     padding-left: 20px;
     li {
       padding-bottom: 15px;
+      @include text-familly;
+    }
+    i {
+      padding-right: 15px;
+      width: 14px;
     }
     @media (min-width: $desktop-responsive) {
       display: flex;
@@ -337,6 +345,7 @@ footer {
 footer a {
   text-decoration: none;
   color: #fff;
+  width: 100%;
 }
 footer ul {
   list-style: none;

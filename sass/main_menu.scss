@@ -17,8 +17,8 @@ header {
   display: inline-block;
   justify-content: space-around;
   margin-top: 15px;
-  width: 100%;
   height: 60px;
+  width: 90%;
   @media (min-width: $desktop-responsive) {
     max-width: 100%;
     height: 110px;
@@ -53,6 +53,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  
   width: 85%;
   @include title-familly;
   @media (min-width: $desktop-responsive) {
@@ -116,6 +118,7 @@ a {
   display: flex;
   font-size: 24px;
   top: 15px;
+  right:15px;
   width: 24px;
   height: 24px;
   color: grey;
@@ -243,7 +246,7 @@ h2 {
     justify-content: flex-end;
     align-items: flex-end;
     @include text-familly;
-    width: 100%;
+    
     height: 100%;
     padding-right: 15px;
   }
@@ -288,14 +291,14 @@ footer {
 }
 .footer {
   width: 100%;
-
-  background-color: #000;
+  background-color: #353535;
   &__title {
     padding-left: 20px;
     padding-top: 20px;
+    padding-bottom: 30px;
     @include title-familly;
     color: white;
-    font-size: 18px;
+    font-size: 22px;
     @media (min-width: $desktop-responsive) {
       text-align: center;
       font-size: 22px;
@@ -306,6 +309,11 @@ footer {
     padding-left: 20px;
     li {
       padding-bottom: 15px;
+      @include text-familly;
+    }
+    i {
+      padding-right: 15px;
+      width: 14px;
     }
     @media (min-width: $desktop-responsive) {
       display: flex;
@@ -318,9 +326,12 @@ footer {
 footer a {
   text-decoration: none;
   color: #fff;
+  width: 100%;
 }
 footer ul {
   list-style: none;
   padding: 0%;
+}
+footer li {
   padding-bottom: 15px;
 }

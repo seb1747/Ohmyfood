@@ -90,7 +90,7 @@ input::placeholder {
   color: black;
 }
 
-input[type="text"]:-moz-placeholder {
+input[type=text]:-moz-placeholder {
   color: #000;
 }
 
@@ -176,8 +176,7 @@ input::-moz-placeholder {
 }
 .reserver__explorer:hover {
   background-image: linear-gradient(#ff79da 30%, #9356dc);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   transform: scale(1.03);
   transition: 400ms;
 }
@@ -238,8 +237,7 @@ input::-moz-placeholder {
   background-color: #e0cbe8;
   transform: scale(1.03);
   transition: 300ms;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 .fonctionnement a:hover .btnIcon {
   color: #9356dc;
@@ -329,8 +327,7 @@ input::-moz-placeholder {
 .card:hover {
   transform: scale(1.05);
   transition: 300ms;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 .card__name {
   display: flex;
@@ -369,7 +366,7 @@ input::-moz-placeholder {
   position: absolute;
   top: 215px;
   font-size: 24px;
-  right: 55px;
+  right: 15px;
   width: 50px;
   height: 50px;
   color: grey;
@@ -408,15 +405,17 @@ figure {
   top: 15px;
   right: 15px;
   width: 82px;
-  height: 32px;
+  height: 28px;
   align-items: center;
   color: #279d80;
-  border-radius: 5px 5px 5px 5px;
+  border-radius: 2px 2px 2px 2px;
   background-color: #99e2d0;
   text-decoration: none;
   font-family: roboto, sans-serif;
   font-size: 18px;
   font-weight: 300;
+  font-size: 14px;
+  font-weight: bold;
 }
 
 footer {
@@ -426,15 +425,16 @@ footer {
 
 .footer {
   width: 100%;
-  background-color: #000;
+  background-color: #353535;
 }
 .footer__title {
   padding-left: 20px;
   padding-top: 20px;
+  padding-bottom: 30px;
   font-family: Shrikhand, sans-serif;
   font-size: 28px;
   color: white;
-  font-size: 18px;
+  font-size: 22px;
 }
 @media (min-width: 1440px) {
   .footer__title {
@@ -448,6 +448,13 @@ footer {
 }
 .footer__list li {
   padding-bottom: 15px;
+  font-family: roboto, sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+.footer__list i {
+  padding-right: 15px;
+  width: 14px;
 }
 @media (min-width: 1440px) {
   .footer__list {
@@ -461,6 +468,7 @@ footer {
 footer a {
   text-decoration: none;
   color: #fff;
+  width: 100%;
 }
 
 footer ul {
@@ -500,9 +508,7 @@ footer li {
   color: #fff;
   z-index: 999;
   font-family: shrikhand;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
-    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
-    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   font-size: 30px;
   animation: rotate 2500ms ease, loader 3000ms forwards;
 }
