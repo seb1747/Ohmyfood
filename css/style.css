@@ -90,7 +90,7 @@ input::placeholder {
   color: black;
 }
 
-input[type=text]:-moz-placeholder {
+input[type="text"]:-moz-placeholder {
   color: #000;
 }
 
@@ -103,7 +103,6 @@ input::-moz-placeholder {
   justify-content: center;
   align-items: center;
   text-align: center;
-  box-shadow: black 4px;
   height: 60px;
   font-family: Shrikhand, sans-serif;
   font-size: 28px;
@@ -177,7 +176,8 @@ input::-moz-placeholder {
 }
 .reserver__explorer:hover {
   background-image: linear-gradient(#ff79da 30%, #9356dc);
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
   transform: scale(1.03);
   transition: 400ms;
 }
@@ -238,7 +238,8 @@ input::-moz-placeholder {
   background-color: #e0cbe8;
   transform: scale(1.03);
   transition: 300ms;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 .fonctionnement a:hover .btnIcon {
   color: #9356dc;
@@ -328,7 +329,8 @@ input::-moz-placeholder {
 .card:hover {
   transform: scale(1.05);
   transition: 300ms;
-  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
 }
 .card__name {
   display: flex;
@@ -498,7 +500,9 @@ footer li {
   color: #fff;
   z-index: 999;
   font-family: shrikhand;
-  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+  box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px,
+    rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+    rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
   font-size: 30px;
   animation: rotate 2500ms ease, loader 3000ms forwards;
 }
